@@ -8,6 +8,7 @@ const dotenv = require('dotenv');
 const path = require('path');
 const cors = require('cors');
 
+axios.defaults.withCredentials = true
 dotenv.config({ path: 'server/config/config.env' }); 
 
 app.use(express.json({ limit: '50mb' }));
