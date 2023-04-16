@@ -1,0 +1,25 @@
+{
+  "shippingInfo": {
+      "address": "49 P. Chùa Láng, Láng Thượng, Đống Đa, Hà Nội  ",
+      "telNum": "0989285104"
+
+  },
+  "customer": "64144e2b99f38649673dfdfa",
+  "seller": "64144e2b99f38649673dfdfa",
+  "orderItems": [
+      {
+          "product": "6419b7ba06f59bfb7817be71",
+          "quantity": 1,
+          "itemPrice": 25000
+      },
+      {
+        "product": "6419b7ba06f59bfb7817be73",
+        "quantity": 2,
+        "itemPrice": 32000
+      }
+  ],
+  "paymentInfo": "Cash",
+  "totalItemsPrice": 89000,
+  "totalOrder": 89000,
+  "notes": "Bánh không cho đường"
+}
