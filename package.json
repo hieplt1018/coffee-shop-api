@@ -1,0 +1,43 @@
+{
+  "name": "coffee-shop",
+  "version": "1.0.0",
+  "description": "gift for my best friend - Trinh Quang Hung",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "set NODE_ENV=DEVELOPMENT& nodemon server/server",
+    "prod": "set NODE_ENV=PRODUCTION& nodemon server/server",
+    "seed": "node server/utils/seeder.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=FALSE && npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hieplt1018/coffee-shop.git"
+  },
+  "author": "Le Tuan Hiep",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hieplt1018/coffee-shop/issues"
+  },
+  "homepage": "https://github.com/hieplt1018/coffee-shop#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cloudinary": "^1.35.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.1",
+    "nodemailer": "^6.9.1",
+    "validator": "^13.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21",
+    "@fortawesome/fontawesome-free": "^6.3.0"
+  },
+  "engines": {
+    "node": "16.20.0",
+    "npm": "8.19.4"
+  }
+}
