@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 const path = require('path');
 const cors = require('cors');
+import axios from 'axios';
 
 axios.defaults.withCredentials = true
 dotenv.config({ path: 'server/config/config.env' }); 
