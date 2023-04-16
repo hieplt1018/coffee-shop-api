@@ -4,10 +4,10 @@
   "description": "gift for my best friend - Trinh Quang Hung",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "set NODE_ENV=DEVELOPMENT& nodemon server",
-    "prod": "set NODE_ENV=PRODUCTION& nodemon server",
-    "seed": "node utils/seeder.js",
+    "start": "node server/server.js",
+    "dev": "set NODE_ENV=DEVELOPMENT& nodemon server/server",
+    "prod": "set NODE_ENV=PRODUCTION& nodemon server/server",
+    "seed": "node server/utils/seeder.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=FALSE && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "repository": {
@@ -33,11 +33,6 @@
     "validator": "^13.9.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.21",
-    "@fortawesome/fontawesome-free": "^6.3.0"
-  },
-  "engines": {
-    "node": "16.20.0",
-    "npm": "8.19.4"
+    "nodemon": "^2.0.21"
   }
 }
