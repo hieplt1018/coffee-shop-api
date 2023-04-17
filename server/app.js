@@ -13,7 +13,7 @@ dotenv.config({ path: 'server/config/config.env' });
 app.use(cors({
   credentials: true,
   exposedHeaders: ["set-cookie"],
-  sameSite: none,
+  sameSite: "none",
   allowedHeaders: ['Content-Type', 'x-auth-token'],
   methods: "GET,HEAD,OPTIONS,PUT,PATCH,POST,DELETE",
   origin: 'https://cantata-coffee.onrender.com'
