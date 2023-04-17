@@ -12,11 +12,7 @@ dotenv.config({ path: 'server/config/config.env' });
 
 app.use(cors({
   credentials: true,
-  exposedHeaders: ["set-cookie"],
-  sameSite: "none",
-  allowedHeaders: ['Content-Type', 'x-auth-token'],
-  methods: "GET,HEAD,OPTIONS,PUT,PATCH,POST,DELETE",
-  origin: 'https://cantata-coffee.onrender.com'
+  origin: "https://cantata-coffee.onrender.com"
 }));
 app.use(express.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
